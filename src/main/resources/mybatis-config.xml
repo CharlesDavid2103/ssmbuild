@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <package name="com.charles.pojo"/>
+    </typeAliases>
+    <mappers>
+        <!--通过mapper接口加载映射文件-->
+        <!--<mapper class="com.charles.dao.BookMapper"/>-->
+
+        <!--通过resource加载映射文件-->
+        <mapper resource="com/charles/dao/BookMapper.xml"/>
+
+        <!--批量加载映射文件-->
+        <!--<package name="com.charles.mapper"/>-->
+
+    </mappers>
+</configuration>
